@@ -1,4 +1,4 @@
-/* --- Локальное подключение Themify Icons --- */
+/* --- Themify Icons  для корзин--- */
 @font-face {
     font-family: 'themify';
     src: url('../fonts/themify-icons/themify.eot');
@@ -35,7 +35,7 @@ body {
     line-height: 24px;
 }
 
-/* --- Общий белый контейнер --- */
+/* --- Карточка товара --- */
 .product-page {
     max-width: 900px;
     width: 100%;
@@ -45,7 +45,7 @@ body {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
 
-/* --- Верхняя часть: картинка + инфо --- */
+/* --- картинка + инфо --- */
 .product-card {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -54,7 +54,7 @@ body {
     align-items: start;
 }
 
-/* --- Изображение --- */
+
 .product-image-wrapper {
     position: relative;
     width: 100%;
@@ -111,7 +111,7 @@ body {
     z-index: 3;
 }
 
-/* --- Модальное окно --- */
+
 .image-modal {
     display: none;
     position: fixed;
@@ -124,7 +124,9 @@ body {
     animation: fadeIn 0.2s ease;
 }
 
-.image-modal.open { display: flex; }
+.image-modal.open { 
+    display: flex; 
+}
 
 .image-modal img {
     max-width: 90vw;
@@ -149,7 +151,10 @@ body {
     transition: color 0.2s, transform 0.2s;
 }
 
-.image-modal-close:hover { color: #80bc14; transform: scale(1.1); }
+.image-modal-close:hover { 
+    color: #80bc14; 
+    transform: scale(1.1); 
+}
 
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 @keyframes zoomIn { from { transform: scale(0.85); opacity: 0; } to { transform: scale(1); opacity: 1; } }
@@ -219,7 +224,7 @@ h1 { font-size: 28px; font-weight: 700; color: #222; margin-bottom: 15px; }
 .variants-list {
     display: flex;
     flex-direction: column;
-    gap: 6px; /* Отступ между полосами */
+    gap: 6px; 
     margin-top: 10px;
 }
 
@@ -230,10 +235,9 @@ h1 { font-size: 28px; font-weight: 700; color: #222; margin-bottom: 15px; }
     background-color: #f9f9f9; /* Серый фон полосы */
     padding: 5px 15px;
     border-radius: 4px;
-    /* Убираем border, чтобы было как на скрине (только фон) */
 }
 
-/* Вес и артикул */
+
 .variant-info {
     display: flex;
     flex-direction: column;
@@ -251,7 +255,6 @@ h1 { font-size: 28px; font-weight: 700; color: #222; margin-bottom: 15px; }
     margin-top: 2px;
 }
 
-/* Цены */
 .variant-prices {
     display: flex;
     flex-direction: column;
@@ -275,12 +278,11 @@ h1 { font-size: 28px; font-weight: 700; color: #222; margin-bottom: 15px; }
     margin-top: 2px;
 }
 
-/* Обертка для кнопки корзины (зеленый квадрат) */
 .variant-cart-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #eef3e6; /* Светло-зеленый фон */
+    background-color: #eef3e6; 
     width: 50px;
     height: 50px;
     border-radius: 4px;
@@ -308,7 +310,7 @@ h1 { font-size: 28px; font-weight: 700; color: #222; margin-bottom: 15px; }
     font-style: normal;
 }
 
-/* Эффект при наведении на корзину */
+
 .variant-cart-wrapper:hover {
     background-color: #000000;
 }
@@ -317,7 +319,7 @@ h1 { font-size: 28px; font-weight: 700; color: #222; margin-bottom: 15px; }
     color: #ffd400;
 }
 
-/* Бейдж (цифра 1) */
+
 .cart-badge {
     position: absolute;
     bottom: 2px;
@@ -327,12 +329,12 @@ h1 { font-size: 28px; font-weight: 700; color: #222; margin-bottom: 15px; }
     font-weight: 700;
 }
 
-/* Блок Наличие */
+
 .variant-stock {
     display: flex;
     flex-direction: column;
     min-width: 70px;
-    text-align: left; /* Выравнивание по левому краю */
+    text-align: left; 
 }
 
 .stock-label {
@@ -346,11 +348,7 @@ h1 { font-size: 28px; font-weight: 700; color: #222; margin-bottom: 15px; }
     font-weight: 700;
     color: #d32f2f;
 }
-/* ============================================
-   НИЖНЯЯ ЧАСТЬ
-   ============================================ */
 
-/* --- Советы к применению --- */
 .short-description { margin-bottom: 40px; }
 
 .short-description h3 {
@@ -386,8 +384,10 @@ h1 { font-size: 28px; font-weight: 700; color: #222; margin-bottom: 15px; }
 
 .feature-text strong { font-size: 15px; color: #222; }
 
-/* --- Похожие товары --- */
-.related-products { margin-bottom: 40px; }
+
+.related-products { 
+    margin-bottom: 40px; 
+}
 
 .related-header {
     display: flex;
@@ -431,7 +431,9 @@ h1 { font-size: 28px; font-weight: 700; color: #222; margin-bottom: 15px; }
     -ms-overflow-style: none;
 }
 
-.related-slider::-webkit-scrollbar { display: none; }
+.related-slider::-webkit-scrollbar { 
+    display: none; 
+}
 
 .related-card {
     flex: 0 0 calc((100% - 30px) / 3);
@@ -563,12 +565,24 @@ h1 { font-size: 28px; font-weight: 700; color: #222; margin-bottom: 15px; }
         margin: 0 auto;
     }
 
-    .variant-item { grid-template-columns: 1fr auto auto; }
-    .variant-stock { display: none; }
+    .variant-item { 
+        grid-template-columns: 1fr auto auto; 
+    }
+    .variant-stock { 
+        display: none; 
+    }
 
-    .related-card { flex: 0 0 calc((100% - 15px) / 2); }
-    .features-list { gap: 20px; }
+    .related-card { 
+        flex: 0 0 calc((100% - 15px) / 2); 
+    }
+    .features-list { 
+        gap: 20px; 
+    }
 
-    .tabs-nav { flex-direction: column; }
-    .tabs-content { padding: 20px; }
+    .tabs-nav { 
+        flex-direction: column; 
+    }
+    .tabs-content { 
+        padding: 20px; 
+    }
 }
